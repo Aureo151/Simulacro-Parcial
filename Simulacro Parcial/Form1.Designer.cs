@@ -28,57 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnEstudiantes = new System.Windows.Forms.Button();
+            this.btnTalleres = new System.Windows.Forms.Button();
+            this.btnInscripciones = new System.Windows.Forms.Button();
+            this.btnReporte = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnEstudiantes
             // 
-            this.button1.Location = new System.Drawing.Point(81, 104);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 82);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Ir a Estudiantes";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnEstudiantes.Location = new System.Drawing.Point(81, 104);
+            this.btnEstudiantes.Name = "btnEstudiantes";
+            this.btnEstudiantes.Size = new System.Drawing.Size(146, 82);
+            this.btnEstudiantes.TabIndex = 0;
+            this.btnEstudiantes.Text = "Ir a Estudiantes";
+            this.btnEstudiantes.UseVisualStyleBackColor = true;
+            this.btnEstudiantes.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnTalleres
             // 
-            this.button2.Location = new System.Drawing.Point(344, 104);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 82);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Ir a Talleres";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnTalleres.Location = new System.Drawing.Point(344, 104);
+            this.btnTalleres.Name = "btnTalleres";
+            this.btnTalleres.Size = new System.Drawing.Size(146, 82);
+            this.btnTalleres.TabIndex = 1;
+            this.btnTalleres.Text = "Ir a Talleres";
+            this.btnTalleres.UseVisualStyleBackColor = true;
+            this.btnTalleres.Click += new System.EventHandler(this.btnTalleres_Click);
             // 
-            // button3
+            // btnInscripciones
             // 
-            this.button3.Location = new System.Drawing.Point(591, 104);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(146, 82);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Ir a Inscripciones";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnInscripciones.Location = new System.Drawing.Point(591, 104);
+            this.btnInscripciones.Name = "btnInscripciones";
+            this.btnInscripciones.Size = new System.Drawing.Size(146, 82);
+            this.btnInscripciones.TabIndex = 2;
+            this.btnInscripciones.Text = "Ir a Inscripciones";
+            this.btnInscripciones.UseVisualStyleBackColor = true;
+            this.btnInscripciones.Click += new System.EventHandler(this.btnInscripciones_Click);
             // 
-            // button4
+            // btnReporte
             // 
-            this.button4.Location = new System.Drawing.Point(344, 287);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(146, 82);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Ir a Reporte";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnReporte.Location = new System.Drawing.Point(344, 287);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(146, 82);
+            this.btnReporte.TabIndex = 3;
+            this.btnReporte.Text = "Ir a Reporte";
+            this.btnReporte.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnReporte);
+            this.Controls.Add(this.btnInscripciones);
+            this.Controls.Add(this.btnTalleres);
+            this.Controls.Add(this.btnEstudiantes);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -87,10 +90,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnEstudiantes;
+        private System.Windows.Forms.Button btnTalleres;
+        private System.Windows.Forms.Button btnInscripciones;
+        private System.Windows.Forms.Button btnReporte;
     }
 }
 

@@ -16,5 +16,23 @@ namespace Simulacro_Parcial
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormEstudiante formEstudiante = new FormEstudiante();
+            formEstudiante.Show();
+        }
+
+        private void btnTalleres_Click(object sender, EventArgs e)
+        {
+            FormTaller formTaller = new FormTaller();
+            formTaller.Show();
+        }
+
+        private void btnInscripciones_Click(object sender, EventArgs e)
+        {
+            FormInscripcion formInscripcion = new FormInscripcion();
+            formInscripcion.Show();
+        }
     }
 }
