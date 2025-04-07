@@ -8,5 +8,8 @@ namespace Simulacro_Parcial
 {
     internal class Taller
     {
+        public string codigo {  get; set; }
+        public string nombre_taller { get; set; }
+        public decimal costo { get; set; }
     }
 }

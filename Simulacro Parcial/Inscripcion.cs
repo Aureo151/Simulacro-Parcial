@@ -8,5 +8,8 @@ namespace Simulacro_Parcial
 {
     internal class Inscripcion
     {
+        public string dpi {  get; set; }
+        public string nombre_taller { get; set; }
+        public DateTime fecha { get; set; }
     }
 }
