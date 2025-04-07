@@ -23,6 +23,7 @@ namespace Simulacro_Parcial
 
         private void button1_Click(object sender, EventArgs e)
         {
+            reportes.Clear();
             foreach (var estudiante in estudiantes)
             {
                 foreach (var inscripcion in inscripciones)
@@ -43,6 +44,31 @@ namespace Simulacro_Parcial
                     }
                 }
             }
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = reportes;
+            dataGridView1.Refresh();
+        }
+
+        private void FormReporte_Load(object sender, EventArgs e)
+        {
+            EstudianteArchivo estudianteArchivo = new EstudianteArchivo();
+            estudiantes = estudianteArchivo.Leer("../../Estudiantes.json");
+
+            TallerArchivo tallerArchivo = new TallerArchivo();
+            talleres = tallerArchivo.Leer("../../Talleres.json");
+
+            InscripcionArchivo inscripcionArchivo = new InscripcionArchivo();
+            inscripciones = inscripcionArchivo.Leer("../../Inscripciones.json");
+
+          
+            label2.Text = cantidadEstudiantes.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            reportes = reportes.OrderBy(r => r.nombre_taller).ToList();
+
+            
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = reportes;
             dataGridView1.Refresh();
