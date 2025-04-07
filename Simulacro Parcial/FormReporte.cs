@@ -61,7 +61,7 @@ namespace Simulacro_Parcial
             inscripciones = inscripcionArchivo.Leer("../../Inscripciones.json");
 
           
-            label2.Text = cantidadEstudiantes.ToString();
+            //label2.Text = cantidadEstudiantes.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
