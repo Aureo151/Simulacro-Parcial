@@ -32,9 +32,9 @@ namespace Simulacro_Parcial
             TallerArchivo tallerArchivo = new TallerArchivo();
             talleres = tallerArchivo.Leer("../../Talleres.json");
 
-            cmbNombreTaller.DataSource = talleres;
-            cmbNombreTaller.ValueMember = "nombre_taller";
-            cmbNombreTaller.DisplayMember = "nombre_taller";
+            cmbCodigo.DataSource = talleres;
+            cmbCodigo.ValueMember = "codigo";
+            cmbCodigo.DisplayMember = "codigo";
         }
         private void mostrar()
         {
@@ -49,7 +49,7 @@ namespace Simulacro_Parcial
         {
             Inscripcion inscripcion = new Inscripcion();
             inscripcion.dpi = cmbdpi.SelectedValue.ToString();
-            inscripcion.nombre_taller = cmbNombreTaller.SelectedValue.ToString();
+            inscripcion.codigo = cmbCodigo.SelectedValue.ToString();
             inscripcion.fecha = DateTime.Now;
 
             inscripciones.Add(inscripcion);

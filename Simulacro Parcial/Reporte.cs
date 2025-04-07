@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Simulacro_Parcial
 {
-    internal class Inscripcion
+    internal class Reporte
     {
-        public string dpi {  get; set; }
-        public string codigo { get; set; }
-        public DateTime fecha { get; set; }
+        public string nombre {  get; set; }
+        public string nombre_taller { get; set; }
     }
 }

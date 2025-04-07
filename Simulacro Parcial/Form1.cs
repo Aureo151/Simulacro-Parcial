@@ -34,5 +34,11 @@ namespace Simulacro_Parcial
             FormInscripcion formInscripcion = new FormInscripcion();
             formInscripcion.Show();
         }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            FormReporte formReporte = new FormReporte();
+            formReporte.Show();
+        }
     }
 }

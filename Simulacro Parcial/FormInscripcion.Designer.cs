@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.cmbdpi = new System.Windows.Forms.ComboBox();
-            this.cmbNombreTaller = new System.Windows.Forms.ComboBox();
+            this.cmbCodigo = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnMostrar = new System.Windows.Forms.Button();
@@ -55,22 +55,22 @@
             this.cmbdpi.Size = new System.Drawing.Size(211, 24);
             this.cmbdpi.TabIndex = 1;
             // 
-            // cmbNombreTaller
+            // cmbCodigo
             // 
-            this.cmbNombreTaller.FormattingEnabled = true;
-            this.cmbNombreTaller.Location = new System.Drawing.Point(139, 79);
-            this.cmbNombreTaller.Name = "cmbNombreTaller";
-            this.cmbNombreTaller.Size = new System.Drawing.Size(211, 24);
-            this.cmbNombreTaller.TabIndex = 3;
+            this.cmbCodigo.FormattingEnabled = true;
+            this.cmbCodigo.Location = new System.Drawing.Point(139, 79);
+            this.cmbCodigo.Name = "cmbCodigo";
+            this.cmbCodigo.Size = new System.Drawing.Size(211, 24);
+            this.cmbCodigo.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(17, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 16);
+            this.label2.Size = new System.Drawing.Size(89, 16);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Nombre Taller";
+            this.label2.Text = "Codigo Taller";
             // 
             // btnGuardar
             // 
@@ -110,7 +110,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.cmbNombreTaller);
+            this.Controls.Add(this.cmbCodigo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbdpi);
             this.Controls.Add(this.label1);
@@ -127,7 +127,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbdpi;
-        private System.Windows.Forms.ComboBox cmbNombreTaller;
+        private System.Windows.Forms.ComboBox cmbCodigo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnMostrar;
