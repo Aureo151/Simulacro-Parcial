@@ -8,6 +8,8 @@ namespace Simulacro_Parcial
 {
     internal class Estudiante
     { 
-        public string 
+        public string dpi {  get; set; }
+        public string nombre { get; set; }
+        public string direccion { get; set; }
     }
 }
